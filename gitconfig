@@ -1,2 +1,6 @@
 [user]
+	name = Cody Partington
 	email = codythatsme@gmail.com
+
+[push]
+	autoSetupRemote = true
