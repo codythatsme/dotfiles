@@ -17,4 +17,9 @@ mkdir -p ~/.config
 ln -sf "$DOTFILES/config/gh" ~/.config/gh
 ln -sf "$DOTFILES/config/git" ~/.config/git
 
+# Symlink Claude global skills
+mkdir -p ~/.claude
+[ -d ~/.claude/skills ] && [ ! -L ~/.claude/skills ] && mv ~/.claude/skills ~/.claude/skills.backup
+ln -sf "$DOTFILES/claude/skills" ~/.claude/skills
+
 echo "Done! Backups created with .backup extension if files existed."
