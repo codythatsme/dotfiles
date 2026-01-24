@@ -18,5 +18,6 @@ const geminiCommand = `/${command} '${prompt}'`;
 const optString = opts.length > 0 ? opts.join(" ") : "";
 
 await $`gemini --yolo ${geminiCommand} ${optString}`.env({
+  ...process.env,
   GEMINI_API_KEY: apiKey,
 });
