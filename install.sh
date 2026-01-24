@@ -14,12 +14,19 @@ ln -sf "$DOTFILES/gitconfig" ~/.gitconfig
 
 # Symlink .config directories
 mkdir -p ~/.config
-ln -sf "$DOTFILES/config/gh" ~/.config/gh
-ln -sf "$DOTFILES/config/git" ~/.config/git
+ln -sfn "$DOTFILES/config/gh" ~/.config/gh
+ln -sfn "$DOTFILES/config/git" ~/.config/git
 
 # Symlink Claude global skills
 mkdir -p ~/.claude
 [ -d ~/.claude/skills ] && [ ! -L ~/.claude/skills ] && mv ~/.claude/skills ~/.claude/skills.backup
-ln -sf "$DOTFILES/claude/skills" ~/.claude/skills
+ln -sfn "$DOTFILES/claude/skills" ~/.claude/skills
+
+# Symlink Claude config files
+[ -f ~/.claude/CLAUDE.md ] && [ ! -L ~/.claude/CLAUDE.md ] && mv ~/.claude/CLAUDE.md ~/.claude/CLAUDE.md.backup
+ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
+
+[ -f ~/.claude/settings.json ] && [ ! -L ~/.claude/settings.json ] && mv ~/.claude/settings.json ~/.claude/settings.json.backup
+ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 
 echo "Done! Backups created with .backup extension if files existed."

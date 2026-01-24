@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:oxc.rs)",
+      "Bash(cat:*)",
+      "WebSearch",
+      "Bash(bun add:*)",
+      "Bash(bun run lint:*)",
+      "Bash(bun run format:check:*)",
+      "Bash(npx tsc:*)",
+      "Bash(bunx tsc:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:bun.com)",
+      "Bash(bun test:*)",
+      "Bash(bun run build:mac:*)",
+      "Bash(./dist/i-migrate)",
+      "Bash(curl:*)",
+      "Bash(./i-migrate)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "enabledPlugins": {
+    "code-simplifier@claude-plugins-official": false,
+    "frontend-design@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true
+  }
+}
