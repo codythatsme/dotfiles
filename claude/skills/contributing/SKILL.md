@@ -9,3 +9,8 @@ description: Personal commit and contribution preferences. Use when making commi
 
 - Do NOT include "Generated with Claude Code" footer
 - Do NOT include "Co-Authored-By: Claude" in commits
+
+## Pull Requests
+
+- Do NOT include a "Test plan" section
+- Do NOT include "Generated with Claude Code" footer

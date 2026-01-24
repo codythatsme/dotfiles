@@ -3,6 +3,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 alias lg='lazygit'
 alias c='cursor'
 alias cc='claude'
+alias z='zed'
 export PATH="$HOME/.local/bin:$PATH"
 
 # fnm (Fast Node Manager)
