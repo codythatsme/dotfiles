@@ -6,3 +6,4 @@ Host *
 Host nas
   HostName 192.168.1.17
   User codythatsme
+  IdentityFile ~/.ssh/id_ed25519_nas
