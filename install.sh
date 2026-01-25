@@ -17,6 +17,11 @@ mkdir -p ~/.config
 ln -sfn "$DOTFILES/config/gh" ~/.config/gh
 ln -sfn "$DOTFILES/config/git" ~/.config/git
 
+# Symlink SSH config
+mkdir -p ~/.ssh
+[ -f ~/.ssh/config ] && [ ! -L ~/.ssh/config ] && mv ~/.ssh/config ~/.ssh/config.backup
+ln -sf "$DOTFILES/config/ssh/config" ~/.ssh/config
+
 # Symlink Claude global skills
 mkdir -p ~/.claude
 [ -d ~/.claude/skills ] && [ ! -L ~/.claude/skills ] && mv ~/.claude/skills ~/.claude/skills.backup
