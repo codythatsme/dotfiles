@@ -34,4 +34,11 @@ ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
 [ -f ~/.claude/settings.json ] && [ ! -L ~/.claude/settings.json ] && mv ~/.claude/settings.json ~/.claude/settings.json.backup
 ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 
+# Symlink Zed config
+mkdir -p ~/.config/zed
+[ -f ~/.config/zed/settings.json ] && [ ! -L ~/.config/zed/settings.json ] && mv ~/.config/zed/settings.json ~/.config/zed/settings.json.backup
+ln -sf "$DOTFILES/config/zed/settings.json" ~/.config/zed/settings.json
+[ -f ~/.config/zed/keymap.json ] && [ ! -L ~/.config/zed/keymap.json ] && mv ~/.config/zed/keymap.json ~/.config/zed/keymap.json.backup
+ln -sf "$DOTFILES/config/zed/keymap.json" ~/.config/zed/keymap.json
+
 echo "Done! Backups created with .backup extension if files existed."
