@@ -28,6 +28,9 @@
     ],
     "defaultMode": "acceptEdits"
   },
+  "attribution": {
+    "commit": ""
+  },
   "enabledPlugins": {
     "code-simplifier@claude-plugins-official": false,
     "frontend-design@claude-plugins-official": false,
