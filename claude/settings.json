@@ -1,4 +1,8 @@
 {
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "permissions": {
     "allow": [
       "WebFetch(domain:oxc.rs)",
@@ -28,13 +32,11 @@
     ],
     "defaultMode": "acceptEdits"
   },
-  "attribution": {
-    "commit": ""
-  },
   "enabledPlugins": {
     "code-simplifier@claude-plugins-official": false,
     "frontend-design@claude-plugins-official": false,
     "typescript-lsp@claude-plugins-official": false,
     "playwright@claude-plugins-official": false
-  }
+  },
+  "effortLevel": "high"
 }
