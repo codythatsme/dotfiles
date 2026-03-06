@@ -8,3 +8,4 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # fnm (Fast Node Manager)
 eval "$(fnm env --use-on-cd)"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
