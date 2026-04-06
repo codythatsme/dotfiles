@@ -36,7 +36,16 @@
     "code-simplifier@claude-plugins-official": false,
     "frontend-design@claude-plugins-official": false,
     "typescript-lsp@claude-plugins-official": false,
-    "playwright@claude-plugins-official": false
+    "playwright@claude-plugins-official": false,
+    "plannotator@plannotator": true
+  },
+  "extraKnownMarketplaces": {
+    "plannotator": {
+      "source": {
+        "source": "github",
+        "repo": "backnotprop/plannotator"
+      }
+    }
   },
   "effortLevel": "high"
 }
