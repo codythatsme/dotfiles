@@ -34,6 +34,11 @@ ln -sf "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md
 [ -f ~/.claude/settings.json ] && [ ! -L ~/.claude/settings.json ] && mv ~/.claude/settings.json ~/.claude/settings.json.backup
 ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 
+# Symlink lazygit config
+mkdir -p ~/.config/lazygit
+[ -f ~/.config/lazygit/config.yml ] && [ ! -L ~/.config/lazygit/config.yml ] && mv ~/.config/lazygit/config.yml ~/.config/lazygit/config.yml.backup
+ln -sf "$DOTFILES/config/lazygit/config.yml" ~/.config/lazygit/config.yml
+
 # Symlink Zed config
 mkdir -p ~/.config/zed
 [ -f ~/.config/zed/settings.json ] && [ ! -L ~/.config/zed/settings.json ] && mv ~/.config/zed/settings.json ~/.config/zed/settings.json.backup
