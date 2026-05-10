@@ -1,0 +1,5 @@
+# Search hidden files / directories
+--hidden
+
+# Skip large binary blobs
+--max-filesize=5M

@@ -1,0 +1,41 @@
+[user]
+	name = Cody Partington
+	email = codythatsme@gmail.com
+	signingKey = ~/.ssh/id_ed25519_github.pub
+
+[branch]
+	sort = -committerdate
+
+[column]
+	ui = auto
+
+[commit]
+	gpgSign = true
+
+[core]
+	fsmonitor = true
+
+[fetch]
+	prune = true
+	writeCommitGraph = true
+
+[gpg]
+	format = ssh
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[rebase]
+	updateRefs = true
+
+[rerere]
+	enabled = true
+
+[tag]
+	gpgSign = true

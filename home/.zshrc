@@ -6,3 +6,5 @@ export PATH="$PATH:$HOME/.local/bin"
 # fnm (Fast Node Manager)
 eval "$(fnm env --use-on-cd)"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"

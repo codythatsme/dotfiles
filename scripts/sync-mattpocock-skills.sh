@@ -1,14 +1,14 @@
 #!/bin/bash
 # Sync skills from https://github.com/mattpocock/skills into ~/.claude/skills.
-# Reads dotfiles/claude/mattpocock-skills.txt as the allowlist.
+# Reads dotfiles/scripts/mattpocock-skills.txt as the allowlist.
 # Idempotent: clones repo if missing, pulls if present, creates/refreshes symlinks.
 
 set -e
 DOTFILES="$HOME/Developer/dotfiles"
 REPO_URL="https://github.com/mattpocock/skills.git"
 REPO_DIR="$DOTFILES/external/mattpocock-skills"
-SKILLS_DIR="$DOTFILES/claude/skills"
-ALLOWLIST="$DOTFILES/claude/mattpocock-skills.txt"
+SKILLS_DIR="$DOTFILES/home/.claude/skills"
+ALLOWLIST="$DOTFILES/scripts/mattpocock-skills.txt"
 
 if [ ! -f "$ALLOWLIST" ]; then
   echo "ERROR: allowlist not found at $ALLOWLIST" >&2
@@ -49,7 +49,7 @@ while IFS= read -r raw; do
     continue
   fi
 
-  ln -sfn "../../external/mattpocock-skills/skills/$category/$name" "$link"
+  ln -sfn "../../../external/mattpocock-skills/skills/$category/$name" "$link"
   echo "  linked $name -> $category/$name"
   managed_names+=("$name")
 done < "$ALLOWLIST"
