@@ -1,10 +1,7 @@
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 alias lg='lazygit'
-alias c='cursor'
-alias cc='claude'
-alias z='zed'
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$HOME/.local/bin"
 
 # fnm (Fast Node Manager)
 eval "$(fnm env --use-on-cd)"
