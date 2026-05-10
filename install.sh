@@ -46,4 +46,7 @@ ln -sf "$DOTFILES/config/zed/settings.json" ~/.config/zed/settings.json
 [ -f ~/.config/zed/keymap.json ] && [ ! -L ~/.config/zed/keymap.json ] && mv ~/.config/zed/keymap.json ~/.config/zed/keymap.json.backup
 ln -sf "$DOTFILES/config/zed/keymap.json" ~/.config/zed/keymap.json
 
+# Sync skills from mattpocock/skills (allowlist at claude/mattpocock-skills.txt)
+"$DOTFILES/scripts/sync-mattpocock-skills.sh"
+
 echo "Done! Backups created with .backup extension if files existed."

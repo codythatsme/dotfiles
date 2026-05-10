@@ -1,0 +1,17 @@
+# Skills from https://github.com/mattpocock/skills to symlink into ~/.claude/skills
+# One per line, format: <category>/<skill-name>
+# Lines starting with # are ignored.
+# After editing, run: ./scripts/sync-mattpocock-skills.sh
+
+engineering/diagnose
+engineering/tdd
+engineering/improve-codebase-architecture
+engineering/zoom-out
+engineering/grill-with-docs
+engineering/to-prd
+engineering/to-issues
+engineering/triage
+engineering/prototype
+engineering/setup-matt-pocock-skills
+productivity/grill-me
+productivity/write-a-skill
